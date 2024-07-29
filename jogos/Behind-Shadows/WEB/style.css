@@ -48,6 +48,7 @@ body {
   border: 2px solid #000;  
   padding: 10px;          
   text-align: left;
+  margin-botton: 10px;
 }
 .BehSha {
   padding-left: 1vw;
@@ -68,6 +69,54 @@ body {
   text-align: left;
   max-width: 100%;
 }
-#last{
-  margin-botton: 10px;
+nav {
+    position: fixed; /* Fixa a barra de navegação no topo */
+    top: 0; /* Alinha ao topo da página */
+    width: 100%; /* Largura total da página */
+    background-color: #333; /* Cor de fundo da barra de navegação */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Sombra para destacar */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    display: flex; /* Utiliza flexbox */
+    justify-content: flex-start; /* Espaça os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+.nav {
+    color: #d8d8d8;
+    list-style-type: none; /* Remove marcadores de lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    display: flex; /* Alinha itens horizontalmente */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+/* Estilo para os itens da lista */
+.nav li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para os links */
+.nav a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 5px 10px; /* Espaçamento interno dos links */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo para os links ao passar o mouse */
+.nav a:hover {
+    color: #a3a3a3; /* Muda a cor do texto ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para a imagem na barra de navegação */
+.nav img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Espaçamento para o conteúdo abaixo da navegação fixa */
+.content {
+    margin-top: 90px; /* Ajuste para evitar que o conteúdo fique embaixo da barra de navegação */
 }
